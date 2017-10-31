@@ -1,0 +1,17 @@
+extends ../layout
+block content
+    link(rel='stylesheet', href='/stylesheets/css/sign.css')
+    form.form-horizontal.form-container(method='post',action='/sign/')
+        .form-group
+            label.col-sm-2.control-label(for='inputEmail3') 用户名
+            .col-sm-10
+                input.form-control#exampleInputName2(type='text',placeholder='用户名')
+        .form-group
+            label.col-sm-2.control-label(for='inputPassword3') 密码
+            .col-sm-10
+                input.form-control#inputPassword3(type='password',placeholder='Password')
+        .checkbox
+            label
+                input(type='checkbox')
+                span 记住密码
+        button.btn.btn-default(type='submit') 登录
